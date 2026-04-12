@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { base44 } from "@/api/base44Client";
+import base44Client from "../api/base44Client";
 
 export default function Feed() {
   const [posts, setPosts] = useState([]);
