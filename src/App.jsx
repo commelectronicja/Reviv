@@ -7,9 +7,9 @@ export default function App() {
   return (
     <Router>
       <Routes>
-        <Route element={<Layout />}>
-          <Route path="/" element={<Feed />} />
-          <Route path="/create" element={<CreatePost />} />
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Feed />} /> {/* better practice */}
+          <Route path="create" element={<CreatePost />} />
         </Route>
       </Routes>
     </Router>
