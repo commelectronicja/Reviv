@@ -17,13 +17,17 @@ export default function Layout() {
           Home
         </Link>
 
-      <Link
-  to="/create"
-  className={
-    location.pathname === "/create"
-      ? "text-blue-500"
-      : "text-gray-400"
-  }
->
-  Create
-</Link>
+        <Link
+          to="/create"
+          className={
+            location.pathname === "/create"
+              ? "text-blue-500"
+              : "text-gray-400"
+          }
+        >
+          Create
+        </Link>
+      </nav>
+    </div>
+  );
+}
