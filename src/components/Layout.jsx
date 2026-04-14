@@ -21,3 +21,6 @@ export default function Layout() {
           to="/create"
           className={`${
             location.pathname === "/create" ? "
+          ? "text-blue-500"
+          : "text-gray-400"
+          }'}
