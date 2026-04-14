@@ -7,7 +7,7 @@ export default function CreatePost() {
   const navigate = useNavigate();
 
   const handlePost = async () => {
-    await base44.entities.Post.create({
+    await client.entities.Post.create({
       content: text,
       author_name: "User",
     });
