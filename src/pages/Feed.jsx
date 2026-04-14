@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import base44Client from "../api/base44Client";
+import client from "../api/base44Client";
 
 export default function Feed() {
   const [posts, setPosts] = useState([]);
@@ -9,7 +9,7 @@ export default function Feed() {
   }, []);
 
   const load = async () => {
-    const data = await base44.entities.Post.list();
+    const data = await client.entities.Post.list();
     setPosts(data);
   };
 
