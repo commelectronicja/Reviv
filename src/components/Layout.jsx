@@ -19,8 +19,8 @@ export default function Layout() {
 
         <Link
           to="/create"
-          className={`${
-            location.pathname === "/create" ? "
-          ? "text-blue-500"
-          : "text-gray-400"
-          }'}
+  className={`${
+  location.pathname === "/create"
+    ? "text-blue-500"
+    : "text-gray-400"
+}`}
