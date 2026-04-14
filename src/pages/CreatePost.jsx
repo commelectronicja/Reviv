@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { base44 } from "@/api/base44Client";
+import client from "../api/base44Client";
 import { useNavigate } from "react-router-dom";
 
 export default function CreatePost() {
