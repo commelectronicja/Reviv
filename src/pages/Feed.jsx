@@ -13,17 +13,18 @@ export default function Feed() {
     setPosts(data);
   };
 
-return (
-  <div className="p-4">
-    {posts.length === 0 ? (
-      <p>No posts yet. Create one!</p>
-    ) : (
-      posts.map((p) => (
-        <div key={p.id} className="bg-gray-800 p-3 rounded mb-2">
-          <p>{p.author_name}</p>
-          <p>{p.content}</p>
-        </div>
-      ))
-    )}
-  </div>
-);
+  return (
+    <div className="p-4">
+      {posts.length === 0 ? (
+        <p>No posts yet. Create one!</p>
+      ) : (
+        posts.map((p) => (
+          <div key={p.id} className="bg-gray-800 p-3 rounded mb-2">
+            <p>{p.author_name}</p>
+            <p>{p.content}</p>
+          </div>
+        ))
+      )}
+    </div>
+  );
+}
